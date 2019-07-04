@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Julius+Sans+One|Monofett|Press+Start+2P|Raleway&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+$black: #02010a;
+$neon-green: #8de25f;
+$muted-blue: #5d86cc;
+$deep-purple: #3a1772;
+$royal-blue: #1702db;
+$white: #f0f9f7;
+
+$font-base: 'Raleway','Helvetica', sans-serif;
+$font-digitized: 'Press Start 2P', sans-serif;
+$font-big: 'Julius Sans One', sans-serif;
+$font-3d: 'Bungee Shade', sans-serif;
+$font-keys: 'Monofett', sans-serif;
+
+html {
+  background: $black;
+}
+
+body {
+  font-family: $font-base;
+  color:$white;
+  background: $black;
+}
+
+h1 {
+  font-family: $font-digitized;
+  font-size: 45px;
+  color: $neon-green;
+}
+.row1 {
+  padding: {
+    top: 50px;
+    bottom: 50px;
+    left: 25px;
+    right: 25px;
+  }
+  text-align: center;
+}
+
+.row2 {
+  padding: {
+    top: 25px;
+    bottom: 25px;
+    left: 10px;
+    right: 10px;
+  }
+}
