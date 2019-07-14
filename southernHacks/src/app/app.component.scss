@@ -1,2 +1,55 @@
 @import '../styles.scss';
 
+h1 {
+  margin-bottom: 50px;
+}
+ fa {
+   color: $neon-green;
+   transition:  all .5s ease-in-out;
+ }
+ fa:hover {
+  font-size: 18px;
+ }
+
+ nav {
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+nav li {
+  display:inline;
+}
+
+nav li:hover {
+
+}
+nav a {
+  display:inline-block;
+  padding:10px;
+  color: $muted-blue;
+  text-decoration: none;
+  transition: .5s;
+}
+
+nav a:hover {
+  font-style: bold;
+  color: $white;
+  transform: translateY(5px);
+  transition: .5s;
+}
+
+nav a:active {
+  font-style: bold;
+  color: $white;
+}
+
+nav a:visited {
+  font-style: bold;
+  color: $deep-purple;
+}
+
+nav a:visited:hover {
+  font-style: bold;
+  color: darken($white, 50%);
+}

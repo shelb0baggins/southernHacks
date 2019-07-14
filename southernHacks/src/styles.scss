@@ -17,34 +17,65 @@ $font-keys: 'Monofett', sans-serif;
 
 html {
   background: $black;
+  min-height: 100%;
+  // overflow: hidden;
 }
 
 body {
   font-family: $font-base;
   color:$white;
   background: $black;
+  // min-height: 100%;
+  // overflow: hidden;
 }
 
-h1 {
-  font-family: $font-digitized;
-  font-size: 45px;
-  color: $neon-green;
-}
-.row1 {
+.home {
+  min-height: 100%;
+  overflow: hidden;
   padding: {
-    top: 50px;
-    bottom: 50px;
-    left: 25px;
-    right: 25px;
+    top: 150px;
+    bottom: 300px;
   }
-  text-align: center;
+
+  .row1 {
+    padding: {
+      top: 50px;
+      bottom: 50px;
+      left: 25px;
+      right: 25px;
+    }
+    text-align: center;
+    h1 {
+      font-family: $font-digitized;
+      font-size: 60px;
+      letter-spacing: 5px;
+      color: $white;
+    }
+  }
+
+}
+.intro {
+  min-height: 100%;
+  .card {
+    padding: 10px;
+    -webkit-box-shadow: 10px 12px 20px -11px rgba(240,249,247,0.1);
+    -moz-box-shadow: 10px 12px 20px -11px rgba(240,249,247,0.1);
+    box-shadow: 10px 12px 20px -11px rgba(240,249,247,0.1);
+    background: $black;
+    margin: 0;
+    border-bottom-right-radius: 10px;
+    h3 {
+      text-align: center;
+     font-size: 26px;
+      font-weight: lighter;
+      color: $royal-blue;
+    }
+    p {
+      margin: 5px;
+      text-align: left;
+    }
+  }
+
 }
 
-.row2 {
-  padding: {
-    top: 25px;
-    bottom: 25px;
-    left: 10px;
-    right: 10px;
-  }
-}
+
