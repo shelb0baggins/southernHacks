@@ -1,19 +1,15 @@
 @import '../../styles.scss';
 
-#intro {
+:host {
   min-height: 100%;
-  .card {
-    padding: 10px;
-    background: darken($white, 20%);
-    margin: 20px;
-    min-height: 250px;
-    max-height: 100%;
-    min-width: 250px;
-    max-width: 100%;
-
-    border-bottom-right-radius: 10px;
+  overflow: hidden;
+    h1 {
+      color: $white;
+      font-size: 35px;
+    }
     h3 {
-      text-align: center;
+      text-align: left;
+      padding-left: 15px;
      font-size: 26px;
       color: $deep-purple;
       font-weight: bolder;
@@ -23,7 +19,37 @@
       margin: 5px;
       text-align: left;
       color: $black;
+      padding: 10px;
+      letter-spacing: .75px;
     }
+   .card {
+     width: 100%;
+    margin: 10px;
+    padding-top: 10px;
+   }
+
+   .dark-blue {
+     border-top: solid 6px $royal-blue;
+     border-radius: 3px;
+   }
+   .purple {
+     border-top: solid 6px $deep-purple;
+     border-radius: 3px;
+   }
+   .light-blue {
+     border-top: solid 6px $muted-blue;
+     border-radius: 3px;
+
+   }
+   @media screen and (min-width: 950px) {
+      .card {
+        max-width: 300px;
+      }
+   }
+   @media screen and (min-width: 1300px) {
+     .card {
+       max-width: 350px;
+     }
+   }
   }
 
-}

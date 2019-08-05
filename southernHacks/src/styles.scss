@@ -16,8 +16,8 @@ $font-3d: 'Bungee Shade', sans-serif;
 $font-keys: 'Monofett', sans-serif;
 
 html {
-  background: $black;
   min-height: 100%;
+  background: $black;
   // overflow: hidden;
 }
 
@@ -25,7 +25,6 @@ body {
   font-family: $font-base;
   color:$white;
   background: $black;
-  // min-height: 100%;
   // overflow: hidden;
 }
 
@@ -54,6 +53,19 @@ body {
   }
 
 }
+hr {
+  border-top: 4px solid $neon-green;
+  border-radius: 3px;
+  width: 100px;
+}
 
+.card {
+  transition: .7s;
+}
+
+.card:hover {
+  transition: .2s;
+  transform: translateY(-2%);
+}
 
 

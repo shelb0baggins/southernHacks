@@ -1,0 +1,75 @@
+@import '../../styles.scss';
+:host {
+  min-height: 100%;
+  overflow: hidden;
+  h1, h3 {
+    color: $white;
+  }
+  h1 {
+    font-size: 35px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  h3 {
+    font-size: 20px;
+    color: $muted-blue;
+  }
+  .card {
+    background-color: $black;
+    margin-left: 10px;
+  }
+  .card.white {
+    background-color: $white;
+    width: 100%;
+    min-height: 300px;
+  }
+  p {
+    color: $black;
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: .75px;
+  }
+  label {
+    color: $black;
+    margin-right: 10px;
+  }
+  .form-group {
+    margin: 15px;
+  }
+  button {
+    margin: 15px;
+    background-color: $black;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    padding: {
+      left: 10px;
+      right: 10px;
+      top: 5px;
+      bottom: 5px;
+    }
+    font-size: 14px;
+    transition: .5s;
+    border: solid 1px $black;
+  }
+  button:hover {
+    border: solid 1px $black;
+    color: $black;
+    background: none;
+    transition: .5s;
+  }
+  input {
+    width: 250px;
+    padding-left: 5px;
+    transition: .5s;
+  }
+  input:focus {
+    outline: none;
+    background-color: lighten($deep-purple, 50%);
+  }
+  input:hover {
+    transition: .5s;
+    color: $black;
+    cursor: pointer;
+  }
+}
