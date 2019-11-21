@@ -8,4 +8,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 })
 export class AppComponent {
   title = 'southernHacks';
+  
 }
+
