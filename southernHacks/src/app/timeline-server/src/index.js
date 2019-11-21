@@ -6,12 +6,12 @@ var app = express();
 
 
 var pool = mysql.createPool({
-  connectionLimit : 100, // default = 10
+  connectionLimit : 1000, // default = 10
   host     : '52.14.156.85',
   port     : '3306',
-  user     : 'remoteuser',
-  password : 'soccer',
-  database : 'test',
+  user     : '',
+  password : '',
+  database : '',
  
 });
 
