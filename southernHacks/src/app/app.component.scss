@@ -1,15 +1,9 @@
 @import '../styles.scss';
 
 h1 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
- fa {
-   color: $neon-green;
-   transition:  all .5s ease-in-out;
- }
- fa:hover {
-  font-size: 18px;
- }
 
  nav {
   list-style:none;
@@ -49,4 +43,25 @@ nav a:visited {
 nav a:visited:hover {
   font-style: bold;
   color: darken($white, 50%);
+}
+img {
+  max-width: 800px;
+
+}
+h1 {
+  font-family: $font-digitized;
+  font-size: 60px;
+  letter-spacing: 5px;
+  color: $white;
+}
+h2 {
+  font-size: 35px;
+}
+@media screen and (max-width: 500px) {
+  img {
+    max-width: 250px;
+  }
+  h1 {
+    font-size: 35px;
+  }
 }
